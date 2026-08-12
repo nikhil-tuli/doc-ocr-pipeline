@@ -1,0 +1,18 @@
+# Core OCR / layout
+paddlepaddle>=2.6.0        # CPU build; swap for paddlepaddle-gpu if you have CUDA
+paddleocr>=2.9.0            # includes PP-StructureV3
+
+# PDF handling
+pdf2image>=1.17.0           # requires poppler-utils installed on the system
+PyMuPDF>=1.24.0              # fallback / faster PDF page rendering + text layer check
+
+# Data handling
+pandas>=2.2.0
+numpy>=1.26.0
+
+# DB
+# sqlite3 is stdlib, no install needed
+
+# Dev / inspection
+pillow>=10.0.0
+tqdm>=4.66.0
