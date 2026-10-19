@@ -64,3 +64,6 @@ python -m src.pipeline --input filename.pdf --doc-type electricity_bill
 * Small text is less reliable at lower DPI - Rasterizing at DPI 100 (needed to stay within memory limits of a laptop) degrades recognition on small font sizes - footnotes and disclaimers sometimes come out garbled while body text and table content stay accurate.
 * Checksum verification is disabled - It's implemented for financial reports (component rows summing to a stated total) but currently commented out pending further testing and isn't implemented at all for electricity bills.
 * DB schema limitations - For electricity bills, normalised row level data is currently not stored in DB, however raw HTML is persisted. For financial reports, both raw HTML and row level data is stored in DB
+
+**Roadmap**
+RAG extension planned
